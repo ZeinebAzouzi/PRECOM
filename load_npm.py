@@ -192,7 +192,7 @@ def get_monthly_release_counts(metadata):
             year -= 1
 
         release_count = 0
-
+        ## 
         for version, published_at in metadata["time"].items():
             # created and modified are metadata entries, not version numbers.
             if version in ("created", "modified"):
